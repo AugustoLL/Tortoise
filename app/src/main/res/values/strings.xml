@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tortoise</string>
+    <string name="search">Search</string>
+    <string name="destination">Destination</string>
+    <string name="origin">Origin</string>
+    <string name="one_way">One Way</string>
+    <string name="flight">FLIGHT</string>
+    <string name="hotel">HOTEL</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="price">Price</string>
+    <string name="get_flights">Get Flights</string>
+    <string name="get_hotels">Get Hotels</string>
+    <string name="proyecto_b_squeda_de_vuelos">Proyecto Búsqueda de Vuelos</string>
+    <string name="augusto_lombino">Augusto Lombino</string>
+</resources>

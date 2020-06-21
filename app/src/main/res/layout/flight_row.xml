@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:screenOrientation="landscape">
+
+    <ImageView
+        android:id="@+id/carrierImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/carrierText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_flight_24px" />
+
+    <TextView
+        android:id="@+id/carrierText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Carrier Name"
+        app:layout_constraintBottom_toBottomOf="@+id/carrierImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carrierImage"
+        app:layout_constraintTop_toTopOf="@+id/carrierImage" />
+
+    <ImageView
+        android:id="@+id/DepartureImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/flight"
+        app:layout_constraintBottom_toTopOf="@+id/calendarImage"
+        app:layout_constraintEnd_toStartOf="@+id/originText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carrierImage"
+        app:srcCompat="@drawable/ic_flight_takeoff_24px" />
+
+    <TextView
+        android:id="@+id/originText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/origin"
+        app:layout_constraintBottom_toBottomOf="@+id/DepartureImage"
+        app:layout_constraintEnd_toStartOf="@+id/destinationImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/DepartureImage"
+        app:layout_constraintTop_toTopOf="@+id/DepartureImage" />
+
+    <ImageView
+        android:id="@+id/destinationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/originText"
+        app:layout_constraintEnd_toStartOf="@+id/destinationText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/originText"
+        app:layout_constraintTop_toTopOf="@+id/originText"
+        app:srcCompat="@drawable/ic_flight_land_24px" />
+
+    <TextView
+        android:id="@+id/destinationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/destination"
+        app:layout_constraintBottom_toBottomOf="@+id/destinationImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/destinationImage"
+        app:layout_constraintTop_toTopOf="@+id/destinationImage" />
+
+    <ImageView
+        android:id="@+id/calendarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBorderImage"
+        app:layout_constraintEnd_toStartOf="@+id/departureDateText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DepartureImage"
+        app:srcCompat="@drawable/ic_event_24px" />
+
+    <TextView
+        android:id="@+id/departureDateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/departure_date"
+        app:layout_constraintBottom_toBottomOf="@+id/calendarImage"
+        app:layout_constraintEnd_toStartOf="@+id/priceImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calendarImage"
+        app:layout_constraintTop_toTopOf="@+id/calendarImage" />
+
+    <ImageView
+        android:id="@+id/priceImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/departureDateText"
+        app:layout_constraintEnd_toStartOf="@+id/priceText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/departureDateText"
+        app:layout_constraintTop_toTopOf="@+id/departureDateText"
+        app:srcCompat="@drawable/ic_euro_24px" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        app:layout_constraintBottom_toBottomOf="@+id/priceImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/priceImage"
+        app:layout_constraintTop_toTopOf="@+id/priceImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/bottomBorderImage"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarImage"
+        app:srcCompat="@drawable/gradient_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
